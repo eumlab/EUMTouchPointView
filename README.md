@@ -10,7 +10,7 @@
 * You want to show your users how to use your App, but recording iOS screen by using **QuickTime** doesn't show your finger touches.
 * You mirror your app to the projector though AirPlay or cable, you want to show your audiences how you use the app.
 
-Watch demo video here:
+Watch demo video here (click to watch it on YouTube):
 
 [![EUMTouchPointView Demo Video](http://i.imgur.com/CRrzEAT.gif?1)](http://www.youtube.com/watch?v=B7mpseXKMpo)
 
