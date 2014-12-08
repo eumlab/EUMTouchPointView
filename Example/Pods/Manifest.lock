@@ -1,0 +1,14 @@
+PODS:
+  - EUMTouchPointView (0.1.0)
+
+DEPENDENCIES:
+  - EUMTouchPointView (from `../`)
+
+EXTERNAL SOURCES:
+  EUMTouchPointView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EUMTouchPointView: 16466edca12d2c7cd48fd7a50ed09b40ac2fd741
+
+COCOAPODS: 0.35.0

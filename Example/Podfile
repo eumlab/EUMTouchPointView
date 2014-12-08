@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'EUMTouchPointView', :exclusive => true do
+  pod "EUMTouchPointView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "EUMTouchPointView", :path => "../"
+
+  
+end
