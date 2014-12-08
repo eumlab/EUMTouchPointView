@@ -12,7 +12,7 @@
 
 Watch demo video here:
 
-[![EUMTouchPointView Demo Video](http://img.youtube.com/vi/B7mpseXKMpo/0.jpg)](http://www.youtube.com/watch?v=B7mpseXKMpo)
+[![EUMTouchPointView Demo Video](http://i.imgur.com/CRrzEAT.gif?1)](http://www.youtube.com/watch?v=B7mpseXKMpo)
 
 
 ## Usage
