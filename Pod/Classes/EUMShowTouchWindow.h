@@ -13,6 +13,7 @@
 @property(nonatomic,strong) UIImage *imgViewPointer;
 @property(nonatomic,assign) CGSize pointerSize;
 @property(nonatomic,strong) UIColor *pointerColor;
-@property(nonatomic,strong) UIColor *pointerStockColor;
+@property(nonatomic,strong) UIColor *pointerStockColor NS_DEPRECATED_IOS(2_0,3_0, "typo here");
+@property(nonatomic,strong) UIColor *pointerStrokeColor;
 
 @end

@@ -22,11 +22,21 @@
 -(void)drawRect:(CGRect)rect{
     
     CGRect frm = self.frame;
-    [self drawPointer:frm.size stockWidth:3];
+    [self drawPointer:frm.size strokeWidth:3];
 
 }
 
-- (void)drawPointer: (CGSize)pointSize stockWidth: (CGFloat)stockWidth
+-(void)setPointerStockColor:(UIColor *)pointerStockColor
+{
+    self.pointerStrokeColor = pointerStockColor;
+}
+
+-(UIColor*)pointerStockColor
+{
+    return _pointerStrokeColor;
+}
+
+- (void)drawPointer: (CGSize)pointSize strokeWidth: (CGFloat)stockWidth
 {
     
     //// General Declarations
@@ -50,8 +60,8 @@
     CGContextSaveGState(context);
     CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
     
-    if (self.pointerStockColor) {
-        [self.pointerStockColor setStroke];
+    if (self.pointerStrokeColor) {
+        [self.pointerStrokeColor setStroke];
     }else{
         [UIColor.whiteColor setStroke];
     }
