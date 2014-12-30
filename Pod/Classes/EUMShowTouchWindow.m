@@ -31,6 +31,16 @@
     return _pointerSize;
 }
 
+-(void)setPointerStockColor:(UIColor *)pointerStockColor
+{
+    self.pointerStrokeColor = pointerStockColor;
+}
+
+-(UIColor*)pointerStockColor
+{
+    return _pointerStrokeColor;
+}
+
 - (void)sendEvent:(UIEvent *)event
 {
     [super sendEvent:event];
@@ -45,7 +55,7 @@
                 EUMTouchPointView *touchPointerView = [[EUMTouchPointView alloc] initWithFrame:CGRectMake(point.x-self.pointerSize.width/2 ,point.y-self.pointerSize.height/2, self.pointerSize.width, self.pointerSize.height)];
                 touchPointerView.contentMode = UIViewContentModeRedraw;
                 touchPointerView.pointerColor = self.pointerColor;
-                touchPointerView.pointerStockColor = self.pointerStockColor;
+                touchPointerView.pointerStrokeColor = self.pointerStrokeColor;
                 [self addSubview:touchPointerView];
                 touch.viewTouchPointer = touchPointerView;
                 touchPointerView.transform = CGAffineTransformMakeScale(kStartScale, kStartScale);
