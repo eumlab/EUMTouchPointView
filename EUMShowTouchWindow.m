@@ -71,10 +71,7 @@
                 CGRect tFrame = touch.viewTouchPointer.frame;
                 tFrame.origin.x = point.x-self.pointerSize.width/2;
                 tFrame.origin.y = point.y-self.pointerSize.height/2;
-                [UIView animateWithDuration:kAnimationDuration animations:^{
-                    touch.viewTouchPointer.frame = tFrame;
-                    
-                }];
+                touch.viewTouchPointer.frame = tFrame;
             }
         }
     }
